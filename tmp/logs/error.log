@@ -1,0 +1,116 @@
+2013-12-12 17:21:36 Error: [MissingControllerException] Controller class PostsController could not be found.
+Exception Attributes: array (
+  'class' => 'PostsController',
+  'plugin' => NULL,
+)
+Request URL: /posts/index
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-12 17:24:07 Error: [MissingTableException] Table posts for model Post was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'posts',
+  'class' => 'Post',
+  'ds' => 'default',
+)
+Request URL: /posts/index
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(3493): Model->setSource('posts')
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2897): Model->getDataSource()
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2869): Model->_readDataSource('all', Array)
+#3 /home/vagrant/exampleCakePhp/Controller/PostsController.php(6): Model->find('all')
+#4 [internal function]: PostsController->index('index')
+#5 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#6 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#7 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#8 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-12-12 18:35:09 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ';' in [/home/vagrant/exampleCakePhp/Model/Post.php, line 3]
+2013-12-12 18:35:09 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ';'
+Request URL: /posts/view/2
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/vagrant/e...', 3)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/vagrant/e...', 3, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/vagrant/e...', 3, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-12 18:35:10 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ';' in [/home/vagrant/exampleCakePhp/Model/Post.php, line 3]
+2013-12-12 18:35:10 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ';'
+Request URL: /posts/view/2
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/vagrant/e...', 3)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/vagrant/e...', 3, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/vagrant/e...', 3, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-12 18:35:10 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ';' in [/home/vagrant/exampleCakePhp/Model/Post.php, line 3]
+2013-12-12 18:35:10 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ';'
+Request URL: /posts/view/2
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/vagrant/e...', 3)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/vagrant/e...', 3, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/vagrant/e...', 3, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-12 18:35:42 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ';' in [/home/vagrant/exampleCakePhp/Model/Post.php, line 3]
+2013-12-12 18:35:42 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ';'
+Request URL: /posts/view/2
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/vagrant/e...', 3)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/vagrant/e...', 3, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/vagrant/e...', 3, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-12 18:35:44 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ';' in [/home/vagrant/exampleCakePhp/Model/Post.php, line 3]
+2013-12-12 18:35:44 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ';'
+Request URL: /posts/view/2
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/vagrant/e...', 3)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/vagrant/e...', 3, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/vagrant/e...', 3, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-12 18:35:45 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ';' in [/home/vagrant/exampleCakePhp/Model/Post.php, line 3]
+2013-12-12 18:35:45 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ';'
+Request URL: /posts/view/2
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/vagrant/e...', 3)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/vagrant/e...', 3, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/vagrant/e...', 3, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-12 19:08:12 Error: [MissingActionException] Action PostsController::jhgkgjkj() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'jhgkgjkj',
+)
+Request URL: /posts/jhgkgjkj
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-12 19:08:22 Error: [NotFoundException] Invalid post
+Request URL: /posts/view
+Stack Trace:
+#0 [internal function]: PostsController->view()
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-12 19:09:40 Error: [NotFoundException] Invalid post
+Request URL: /posts/view
+Stack Trace:
+#0 [internal function]: PostsController->view()
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
