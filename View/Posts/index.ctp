@@ -1,4 +1,5 @@
 <h1>Blog posts</h1>
+<p><?php echo 'Xin chao:'.$userID; ?> <?php echo $this->Html->link('Logout', array('controller'=>'users','action' => 'logout')); ?></p>
 <p><?php echo $this->Html->link('Add Post', array('action' => 'add')); ?></p>
 <table>
     <tr>

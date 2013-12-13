@@ -114,3 +114,711 @@ Stack Trace:
 #3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
 #4 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2013-12-13 11:30:49 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR) in [/home/vagrant/exampleCakePhp/Controller/AppController.php, line 33]
+2013-12-13 11:30:49 Error: [FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Request URL: /
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/vagrant/e...', 33)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/vagrant/e...', 33, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/vagrant/e...', 33, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-13 11:32:17 Error: [MissingViewException] View file "/home/vagrant/exampleCakePhp/View/Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/vagrant/exampleCakePhp/View/Users/index.ctp',
+)
+Request URL: /Users
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-13 11:32:29 Error: [MissingViewException] View file "/home/vagrant/exampleCakePhp/View/Users/login.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/vagrant/exampleCakePhp/View/Users/login.ctp',
+)
+Request URL: /users/login
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-13 11:35:42 Error: [MissingViewException] View file "/home/vagrant/exampleCakePhp/View/Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/vagrant/exampleCakePhp/View/Users/index.ctp',
+)
+Request URL: /users
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-13 11:36:33 Error: [MissingViewException] View file "/home/vagrant/exampleCakePhp/View/Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/vagrant/exampleCakePhp/View/Users/index.ctp',
+)
+Request URL: /users
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-13 11:36:35 Error: [MissingViewException] View file "/home/vagrant/exampleCakePhp/View/Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/vagrant/exampleCakePhp/View/Users/index.ctp',
+)
+Request URL: /users
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-13 11:36:45 Error: [MissingViewException] View file "/home/vagrant/exampleCakePhp/View/Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/vagrant/exampleCakePhp/View/Users/index.ctp',
+)
+Request URL: /users
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-13 11:47:52 Error: Fatal Error (4): syntax error, unexpected 'return' (T_RETURN), expecting function (T_FUNCTION) in [/home/vagrant/exampleCakePhp/Controller/AppController.php, line 41]
+2013-12-13 11:47:52 Error: [FatalErrorException] syntax error, unexpected 'return' (T_RETURN), expecting function (T_FUNCTION)
+Request URL: /posts
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/vagrant/e...', 41)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/vagrant/e...', 41, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/vagrant/e...', 41, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-13 11:51:55 Error: [MissingViewException] View file "/home/vagrant/exampleCakePhp/View/Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/vagrant/exampleCakePhp/View/Users/index.ctp',
+)
+Request URL: /Users
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-13 11:57:40 Error: [MissingViewException] View file "/home/vagrant/exampleCakePhp/View/Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/vagrant/exampleCakePhp/View/Users/index.ctp',
+)
+Request URL: /users
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-13 12:05:05 Error: [MissingActionException] Action UsersController::asasg() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'asasg',
+)
+Request URL: /users/asasg
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-13 12:14:56 Error: [MissingViewException] View file "/home/vagrant/exampleCakePhp/View/Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/vagrant/exampleCakePhp/View/Users/index.ctp',
+)
+Request URL: /users
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-13 12:21:22 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /user/add
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-13 12:21:36 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /user/add
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-13 12:22:01 Error: [MissingViewException] View file "/home/vagrant/exampleCakePhp/View/Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/vagrant/exampleCakePhp/View/Users/index.ctp',
+)
+Request URL: /users
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-13 12:23:00 Error: [MissingViewException] View file "/home/vagrant/exampleCakePhp/View/Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/vagrant/exampleCakePhp/View/Users/index.ctp',
+)
+Request URL: /users
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-13 12:36:58 Error: [NotFoundException] Invalid post
+Request URL: /posts/edit
+Stack Trace:
+#0 [internal function]: PostsController->edit()
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-13 12:37:11 Error: [NotFoundException] Invalid post
+Request URL: /posts/edit/1
+Stack Trace:
+#0 [internal function]: PostsController->edit('1')
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-13 12:57:57 Error: [NotFoundException] Invalid post
+Request URL: /posts/view/1
+Stack Trace:
+#0 [internal function]: PostsController->view('1')
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-13 13:01:36 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /post
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-13 13:02:21 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /post
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-13 13:02:22 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /post
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-13 13:02:23 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /post
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-13 13:03:26 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /post
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-13 13:03:56 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /post
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-13 13:03:59 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /post
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-13 13:04:00 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /post
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-13 13:04:00 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /post
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-13 13:04:01 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /post
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-13 13:04:17 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /post
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-13 13:04:18 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /post
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-13 13:04:19 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /post
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-13 13:04:19 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /post
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-13 13:04:23 Error: Fatal Error (4): syntax error, unexpected 'if' (T_IF) in [/home/vagrant/exampleCakePhp/Controller/PostsController.php, line 28]
+2013-12-13 13:04:23 Error: [FatalErrorException] syntax error, unexpected 'if' (T_IF)
+Request URL: /posts
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/vagrant/e...', 28)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/vagrant/e...', 28, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/vagrant/e...', 28, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-13 13:13:06 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/home/vagrant/exampleCakePhp/Controller/AppController.php, line 45]
+2013-12-13 13:13:06 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /users
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/vagrant/e...', 45)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/vagrant/e...', 45, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/vagrant/e...', 45, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-13 14:00:30 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /posts
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/HelperCollection.php(63): HelperCollection->load('Auth')
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(818): HelperCollection->__isset('Auth')
+#2 /home/vagrant/exampleCakePhp/View/Posts/index.ctp(4): View->__get('Auth')
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(929): include('/home/vagrant/e...')
+#4 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(891): View->_evaluate('/home/vagrant/e...', Array)
+#5 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(460): View->_render('/home/vagrant/e...')
+#6 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#7 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#8 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#9 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-12-13 16:03:06 Error: Fatal Error (64): Can't use method return value in write context in [/home/vagrant/exampleCakePhp/Controller/PostsController.php, line 9]
+2013-12-13 16:03:06 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /posts/
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/home/vagrant/e...', 9)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/home/vagrant/e...', 9, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/home/vagrant/e...', 9, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-13 16:03:50 Error: Fatal Error (64): Can't use method return value in write context in [/home/vagrant/exampleCakePhp/Controller/PostsController.php, line 12]
+2013-12-13 16:03:50 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /posts/
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/home/vagrant/e...', 12)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/home/vagrant/e...', 12, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/home/vagrant/e...', 12, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-13 16:03:51 Error: Fatal Error (64): Can't use method return value in write context in [/home/vagrant/exampleCakePhp/Controller/PostsController.php, line 12]
+2013-12-13 16:03:51 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /posts/
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/home/vagrant/e...', 12)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/home/vagrant/e...', 12, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/home/vagrant/e...', 12, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-13 16:03:52 Error: Fatal Error (64): Can't use method return value in write context in [/home/vagrant/exampleCakePhp/Controller/PostsController.php, line 12]
+2013-12-13 16:03:52 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /posts/
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/home/vagrant/e...', 12)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/home/vagrant/e...', 12, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/home/vagrant/e...', 12, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-13 16:03:52 Error: Fatal Error (64): Can't use method return value in write context in [/home/vagrant/exampleCakePhp/Controller/PostsController.php, line 12]
+2013-12-13 16:03:52 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /posts/
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/home/vagrant/e...', 12)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/home/vagrant/e...', 12, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/home/vagrant/e...', 12, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-13 16:03:53 Error: Fatal Error (64): Can't use method return value in write context in [/home/vagrant/exampleCakePhp/Controller/PostsController.php, line 12]
+2013-12-13 16:03:53 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /posts/
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/home/vagrant/e...', 12)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/home/vagrant/e...', 12, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/home/vagrant/e...', 12, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-13 16:04:13 Error: Fatal Error (64): Can't use method return value in write context in [/home/vagrant/exampleCakePhp/Controller/PostsController.php, line 12]
+2013-12-13 16:04:13 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /posts/
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/home/vagrant/e...', 12)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/home/vagrant/e...', 12, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/home/vagrant/e...', 12, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-13 16:04:15 Error: Fatal Error (64): Can't use method return value in write context in [/home/vagrant/exampleCakePhp/Controller/PostsController.php, line 12]
+2013-12-13 16:04:15 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /posts/
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/home/vagrant/e...', 12)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/home/vagrant/e...', 12, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/home/vagrant/e...', 12, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-13 16:04:16 Error: Fatal Error (64): Can't use method return value in write context in [/home/vagrant/exampleCakePhp/Controller/PostsController.php, line 12]
+2013-12-13 16:04:16 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /posts/
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/home/vagrant/e...', 12)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/home/vagrant/e...', 12, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/home/vagrant/e...', 12, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-13 16:04:17 Error: Fatal Error (64): Can't use method return value in write context in [/home/vagrant/exampleCakePhp/Controller/PostsController.php, line 12]
+2013-12-13 16:04:17 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /posts/
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/home/vagrant/e...', 12)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/home/vagrant/e...', 12, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/home/vagrant/e...', 12, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-13 16:04:17 Error: Fatal Error (64): Can't use method return value in write context in [/home/vagrant/exampleCakePhp/Controller/PostsController.php, line 12]
+2013-12-13 16:04:17 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /posts/
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/home/vagrant/e...', 12)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/home/vagrant/e...', 12, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/home/vagrant/e...', 12, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-13 16:04:17 Error: Fatal Error (64): Can't use method return value in write context in [/home/vagrant/exampleCakePhp/Controller/PostsController.php, line 12]
+2013-12-13 16:04:17 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /posts/
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/home/vagrant/e...', 12)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/home/vagrant/e...', 12, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/home/vagrant/e...', 12, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-13 16:04:17 Error: Fatal Error (64): Can't use method return value in write context in [/home/vagrant/exampleCakePhp/Controller/PostsController.php, line 12]
+2013-12-13 16:04:17 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /posts/
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/home/vagrant/e...', 12)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/home/vagrant/e...', 12, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/home/vagrant/e...', 12, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-13 16:04:18 Error: Fatal Error (64): Can't use method return value in write context in [/home/vagrant/exampleCakePhp/Controller/PostsController.php, line 12]
+2013-12-13 16:04:18 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /posts/
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/home/vagrant/e...', 12)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/home/vagrant/e...', 12, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/home/vagrant/e...', 12, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-13 16:04:47 Error: Fatal Error (64): Can't use method return value in write context in [/home/vagrant/exampleCakePhp/Controller/PostsController.php, line 12]
+2013-12-13 16:04:47 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /posts/add
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/home/vagrant/e...', 12)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/home/vagrant/e...', 12, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/home/vagrant/e...', 12, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-13 16:04:50 Error: Fatal Error (64): Can't use method return value in write context in [/home/vagrant/exampleCakePhp/Controller/PostsController.php, line 12]
+2013-12-13 16:04:50 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /posts/add
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/home/vagrant/e...', 12)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/home/vagrant/e...', 12, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/home/vagrant/e...', 12, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-13 16:04:50 Error: Fatal Error (64): Can't use method return value in write context in [/home/vagrant/exampleCakePhp/Controller/PostsController.php, line 12]
+2013-12-13 16:04:50 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /posts/add
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Can't use metho...', '/home/vagrant/e...', 12)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', '/home/vagrant/e...', 12, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', '/home/vagrant/e...', 12, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-13 16:23:55 Error: [NotFoundException] Invalid post
+Request URL: /posts/edit/5
+Stack Trace:
+#0 [internal function]: PostsController->edit('5')
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-13 16:45:00 Error: Fatal Error (4): syntax error, unexpected ',', expecting function (T_FUNCTION) in [/home/vagrant/exampleCakePhp/Controller/AppController.php, line 32]
+2013-12-13 16:45:00 Error: [FatalErrorException] syntax error, unexpected ',', expecting function (T_FUNCTION)
+Request URL: /posts
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/vagrant/e...', 32)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/vagrant/e...', 32, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/vagrant/e...', 32, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-13 16:45:20 Error: Fatal Error (4): syntax error, unexpected ',', expecting function (T_FUNCTION) in [/home/vagrant/exampleCakePhp/Controller/AppController.php, line 32]
+2013-12-13 16:45:20 Error: [FatalErrorException] syntax error, unexpected ',', expecting function (T_FUNCTION)
+Request URL: /users
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/vagrant/e...', 32)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/vagrant/e...', 32, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/vagrant/e...', 32, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-13 16:59:53 Error: [MissingControllerException] Controller class AasgController could not be found.
+Exception Attributes: array (
+  'class' => 'AasgController',
+  'plugin' => NULL,
+)
+Request URL: /aasg
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-13 18:23:07 Error: [MissingControllerException] Controller class SdglkjsdgController could not be found.
+Exception Attributes: array (
+  'class' => 'SdglkjsdgController',
+  'plugin' => NULL,
+)
+Request URL: /sdglkjsdg
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-13 18:23:14 Error: [MissingActionException] Action PostsController::sdfksdhf() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'sdfksdhf',
+)
+Request URL: /posts/sdfksdhf
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-13 18:23:18 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /post
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-13 18:32:50 Error: [MissingViewException] View file "/home/vagrant/exampleCakePhp/View/Threads/view.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/vagrant/exampleCakePhp/View/Threads/view.ctp',
+)
+Request URL: /threads/view/1
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-13 18:43:31 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getAll' at line 1
+Request URL: /threads
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getAll', Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('getAll', Array, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getAll', Array, Array)
+#4 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(800): DboSource->query('getAll', Array, Object(Thread))
+#5 /home/vagrant/exampleCakePhp/Controller/ThreadsController.php(7): Model->__call('getAll', Array)
+#6 /home/vagrant/exampleCakePhp/Controller/ThreadsController.php(7): Thread->getAll()
+#7 [internal function]: ThreadsController->index()
+#8 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#9 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#11 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-12-13 19:23:32 Error: [MissingViewException] View file "/home/vagrant/exampleCakePhp/View/Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/vagrant/exampleCakePhp/View/Users/index.ctp',
+)
+Request URL: /users/
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-13 19:31:16 Error: [MissingControllerException] Controller class MesssagesController could not be found.
+Exception Attributes: array (
+  'class' => 'MesssagesController',
+  'plugin' => NULL,
+)
+Request URL: /messsages/index/1
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-13 19:32:44 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [/home/vagrant/exampleCakePhp/Model/Message.php, line 24]
+2013-12-13 19:32:44 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+Request URL: /messages/index/1
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/vagrant/e...', 24)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/vagrant/e...', 24, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/vagrant/e...', 24, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-13 19:34:27 Error: Fatal Error (4): syntax error, unexpected ';' in [/home/vagrant/exampleCakePhp/View/Messages/index.ctp, line 21]
+2013-12-13 19:34:27 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /messages/index/1
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/vagrant/e...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/vagrant/e...', 21, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/vagrant/e...', 21, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-13 19:35:23 Error: Fatal Error (4): syntax error, unexpected ';' in [/home/vagrant/exampleCakePhp/View/Messages/index.ctp, line 21]
+2013-12-13 19:35:23 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /messages/index/1
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/vagrant/e...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/vagrant/e...', 21, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/vagrant/e...', 21, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-13 19:35:25 Error: Fatal Error (4): syntax error, unexpected ';' in [/home/vagrant/exampleCakePhp/View/Messages/index.ctp, line 21]
+2013-12-13 19:35:25 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /messages/index/1
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/vagrant/e...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/vagrant/e...', 21, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/vagrant/e...', 21, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-13 19:35:27 Error: Fatal Error (4): syntax error, unexpected ';' in [/home/vagrant/exampleCakePhp/View/Messages/index.ctp, line 21]
+2013-12-13 19:35:27 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /messages/index/1
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/vagrant/e...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/vagrant/e...', 21, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/vagrant/e...', 21, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
