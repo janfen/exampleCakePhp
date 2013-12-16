@@ -2,10 +2,15 @@
 class ThreadsController extends AppController {
     public $helpers = array('Html', 'Form');
 
-    public function index() {
-		$this->set('userID',$this->Auth->user('username'));
+	public function beforeFilter() {
+		parent::beforeFilter();
+		$this->set('userID',$this->Auth->user('id'));
+		$this->set('userName',$this->Auth->user('password'));
+	}
+	
+    public function index() {		
         $this->set('threads', $this->Thread->getAllThread());
-	   
+		
     }
 
 	

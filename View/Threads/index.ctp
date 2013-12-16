@@ -1,7 +1,7 @@
 
-<p><?php echo 'Xin chao:'.$userID; ?> <?php echo $this->Html->link('Logout', array('controller'=>'users','action' => 'logout')); ?> <h1>List Threads</h1></p>
+<p><?php echo 'Xin chao:'.$userName; ?> <?php echo $this->Html->link('Logout', array('controller'=>'users','action' => 'logout')); ?> <h1>List Threads</h1></p>
 <p><?php echo $this->Html->link('Add Thread', array('action' => 'add')); ?></p>
-<table>
+<table class="table table-hover">
     <tr>
         <th>Id</th>
         <th>Name</th>
@@ -20,10 +20,9 @@
 			<?php
                 echo $this->Html->link(
                     $thread['Thread']['name'],
-                    array('controller' => 'messages' , 'action' => 'index',$thread['Thread']['id'],)
+                    array('controller' => 'messages' , 'action' => 'index',$thread['Thread']['id'])
                 );
             ?>
-			<?php echo $this->Html->link('Logout', array('controller'=>'users','action' => 'logout')); ?>
         </td>
         
 		<td>
@@ -40,11 +39,16 @@
 		
 		<td>
             <?php
-                echo $this->Form->postLink(
-                    'Delete',
-                    array('action' => 'delete', $thread['Thread']['id']),
-                    array('confirm' => 'Are you sure?')
-                );
+				if($userID==$thread['Thread']['user_id']){
+					echo $this->Form->postLink(
+						'Delete',
+						array('action' => 'delete', $thread['Thread']['id']),
+						array('confirm' => 'Are you sure?')
+					);
+				}
+				else{
+					echo "Can't Delete";
+				}
             ?>
         </td>
     </tr>

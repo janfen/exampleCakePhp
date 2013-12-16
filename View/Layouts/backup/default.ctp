@@ -14,7 +14,8 @@
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
-		<?php echo "CakePhp - Example Chat" ?>:
+		<?php echo $cakeDescription ?>:
+		<?php echo $title_for_layout; ?>
 	</title>
 	<?php
 		echo $this->Html->meta('icon');
@@ -34,9 +35,9 @@
 			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>-->
 		</div>
 		<div id="content">
-<span class="help-block">
+
 			<?php echo $this->Session->flash(); ?>
-</span>
+
 			<?php echo $this->fetch('content'); ?>
 		</div>
 		<!--<div id="footer">

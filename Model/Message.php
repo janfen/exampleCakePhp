@@ -1,7 +1,7 @@
 <?php
 class Message extends AppModel {
     public $validate = array(
-        'Message' => array(
+        'message' => array(
             'rule' => 'notEmpty'
         )
     );

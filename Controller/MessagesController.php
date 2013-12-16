@@ -2,9 +2,14 @@
 class MessagesController extends AppController {
     public $helpers = array('Html', 'Form');
 
+	public function beforeFilter() {
+		parent::beforeFilter();
+		$this->set('userID',$this->Auth->user('id'));
+		$this->set('userName',$this->Auth->user('username'));
+	}
+	
     public function index($thread_id=null) {
 		$this->set('thread_id',$thread_id);
-		$this->set('userID',$this->Auth->user('username'));
         $this->set('messages', $this->Message->getAllMessage($thread_id));
 		
     }
@@ -27,19 +32,19 @@ class MessagesController extends AppController {
 			$this->request->data['Message']['thread_id'] = $thread_id;
             if ($this->Message->save($this->request->data)) {
                 $this->Session->setFlash(__('Your message has been saved.'));
-                return $this->redirect(array('action' => 'index'));
+                return $this->redirect(array('action' => 'index', $thread_id));
             }
-            $this->Session->setFlash(__('Unable to add your thread.'));
+            $this->Session->setFlash(__('Unable to add your message.'));
         }
     }
-	public function edit($thread_id=null, $id = null) {
+	public function edit($id, $thread_id) {
 		if (!$id) {
-			throw new NotFoundException(__('Invalid thread'));
+			throw new NotFoundException(__('Invalid message'));
 		}
 
 		$message = $this->Message->findById($id);
-		if (!$thread) {
-			throw new NotFoundException(__('Invalid thread'));
+		if (!$message) {
+			throw new NotFoundException(__('Invalid message'));
 		}
 
 		if ($this->request->is(array('post', 'put'))) {
@@ -52,19 +57,30 @@ class MessagesController extends AppController {
 		}
 
 		if (!$this->request->data) {
-			$this->request->data = $thread;
+			$this->request->data = $message;
 		}
 	}
-	public function delete($id) {
+	public function delete($id, $thread_id) {
 		if ($this->request->is('get')) {
 			throw new MethodNotAllowedException();
 		}
-		if ($this->Message->delete($id)) {
+		/* $message = $this->Message->findById($id);
+		$message -> isDelete =true; */
+		$this->Message->id = $id;
+		if($this->Message->saveField('isDelete', true)){
+			$this->Session->setFlash(__('Your message has been updated.'));
+			return $this->redirect(array('action' => 'index', $thread_id));
+		}
+		/* if ($this->Message->save($message)) {
+				$this->Session->setFlash(__('Your message has been updated.'));
+				return $this->redirect(array('action' => 'index', $thread_id));
+		} */
+		/* if ($this->Message->delete($id)) {
 			$this->Session->setFlash(
 				__('The message with id: %s has been deleted.', h($id))
 			);
-			return $this->redirect(array('action' => 'index'));
-		}
+			return $this->redirect(array('action' => 'index', $thread_id));
+		} */
 	}
 	public function isAuthorized($user) {
 		return parent::isAuthorized($user);

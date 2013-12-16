@@ -29,8 +29,8 @@
 	#Router::connect('/threads/delete/*', array('controller' => 'threads', 'action' => 'delete'));
 	#Router::connect('/threads/*', array('controller' => 'threads', 'action' => 'index'));
 	#Router::connect('/users/add', array('controller' => 'users', 'action' => 'add'));
-	#Router::connect('/login', array('controller' => 'users', 'action' => 'login'));
-	#Router::connect('/users/logout', array('controller' => 'users', 'action' => 'logout'));
+	Router::connect('/login', array('controller' => 'users', 'action' => 'login'));
+	Router::connect('/users/logout', array('controller' => 'users', 'action' => 'logout'));
 	#Router::connect('/*', array('controller' => 'users', 'action' => 'login'));
 /**
  * ...and connect the rest of 'Pages' controller's URLs.

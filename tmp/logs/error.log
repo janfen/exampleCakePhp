@@ -822,3 +822,378 @@ Stack Trace:
 #3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2013-12-13 19:43:23 Error: [MissingViewException] View file "/home/vagrant/exampleCakePhp/View/Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/vagrant/exampleCakePhp/View/Users/index.ctp',
+)
+Request URL: /users
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-16 10:42:08 Error: [MissingActionException] Action UsersController::logut() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'logut',
+)
+Request URL: /users/logut
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-16 10:45:06 Error: [MissingViewException] View file "/home/vagrant/exampleCakePhp/View/Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/vagrant/exampleCakePhp/View/Users/index.ctp',
+)
+Request URL: /users
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-16 10:58:02 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+Request URL: /messages
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `UserJoi...', Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `UserJoi...', Array, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(1076): DboSource->fetchAll('SELECT `UserJoi...', false)
+#4 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2897): DboSource->read(Object(Message), Array)
+#5 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2869): Model->_readDataSource('all', Array)
+#6 /home/vagrant/exampleCakePhp/Model/Message.php(29): Model->find('all', Array)
+#7 /home/vagrant/exampleCakePhp/Controller/MessagesController.php(8): Message->getAllMessage(NULL)
+#8 [internal function]: MessagesController->index()
+#9 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#10 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest), Object(CakeResponse))
+#12 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-12-16 11:00:11 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+Request URL: /messages
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `UserJoi...', Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `UserJoi...', Array, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(1076): DboSource->fetchAll('SELECT `UserJoi...', false)
+#4 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2897): DboSource->read(Object(Message), Array)
+#5 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2869): Model->_readDataSource('all', Array)
+#6 /home/vagrant/exampleCakePhp/Model/Message.php(29): Model->find('all', Array)
+#7 /home/vagrant/exampleCakePhp/Controller/MessagesController.php(8): Message->getAllMessage(NULL)
+#8 [internal function]: MessagesController->index()
+#9 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#10 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest), Object(CakeResponse))
+#12 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-12-16 11:00:38 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+Request URL: /messages
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `UserJoi...', Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `UserJoi...', Array, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(1076): DboSource->fetchAll('SELECT `UserJoi...', false)
+#4 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2897): DboSource->read(Object(Message), Array)
+#5 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(2869): Model->_readDataSource('all', Array)
+#6 /home/vagrant/exampleCakePhp/Model/Message.php(29): Model->find('all', Array)
+#7 /home/vagrant/exampleCakePhp/Controller/MessagesController.php(8): Message->getAllMessage(NULL)
+#8 [internal function]: MessagesController->index()
+#9 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#10 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest), Object(CakeResponse))
+#12 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-12-16 11:03:26 Error: [MissingViewException] View file "/home/vagrant/exampleCakePhp/View/Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/vagrant/exampleCakePhp/View/Users/index.ctp',
+)
+Request URL: /users
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-16 11:18:04 Error: Fatal Error (4): syntax error, unexpected '<' in [/home/vagrant/exampleCakePhp/View/Messages/index.ctp, line 40]
+2013-12-16 11:18:04 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /messages/index/4
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/vagrant/e...', 40)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/vagrant/e...', 40, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/vagrant/e...', 40, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 11:20:08 Error: [NotFoundException] Invalid thread
+Request URL: /messages/edit/5
+Stack Trace:
+#0 [internal function]: MessagesController->edit('5')
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-16 11:22:04 Error: [NotFoundException] Invalid thread
+Request URL: /messages/edit/5
+Stack Trace:
+#0 [internal function]: MessagesController->edit('5')
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-16 11:22:05 Error: [NotFoundException] Invalid thread
+Request URL: /messages/edit/5
+Stack Trace:
+#0 [internal function]: MessagesController->edit('5')
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-16 11:25:01 Error: [MissingActionException] Action MessagesController::5() could not be found.
+Exception Attributes: array (
+  'controller' => 'MessagesController',
+  'action' => '5',
+)
+Request URL: /messages/5
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-16 09:44:23 Error: [MissingViewException] View file "/home/vagrant/exampleCakePhp/View/Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/vagrant/exampleCakePhp/View/Users/index.ctp',
+)
+Request URL: /users/
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-16 10:17:02 Error: [MissingViewException] View file "/home/vagrant/exampleCakePhp/View/Messages/delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/vagrant/exampleCakePhp/View/Messages/delete.ctp',
+)
+Request URL: /messages/delete/17/8
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-16 14:27:35 Error: [MissingHelperException] Helper class FromHelper could not be found.
+Exception Attributes: array (
+  'class' => 'FromHelper',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/HelperCollection.php(63): HelperCollection->load('From')
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(818): HelperCollection->__isset('From')
+#2 /home/vagrant/exampleCakePhp/View/Users/login.ctp(13): View->__get('From')
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(929): include('/home/vagrant/e...')
+#4 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(891): View->_evaluate('/home/vagrant/e...', Array)
+#5 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(460): View->_render('/home/vagrant/e...')
+#6 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#7 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#8 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#9 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-12-16 14:40:25 Error: Fatal Error (4): syntax error, unexpected 'btn' (T_STRING) in [/home/vagrant/exampleCakePhp/View/Users/login.ctp, line 12]
+2013-12-16 14:40:25 Error: [FatalErrorException] syntax error, unexpected 'btn' (T_STRING)
+Request URL: /
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/vagrant/e...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/vagrant/e...', 12, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/vagrant/e...', 12, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 14:40:48 Error: Fatal Error (4): syntax error, unexpected 'btn' (T_STRING) in [/home/vagrant/exampleCakePhp/View/Users/login.ctp, line 12]
+2013-12-16 14:40:48 Error: [FatalErrorException] syntax error, unexpected 'btn' (T_STRING)
+Request URL: /
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/vagrant/e...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/vagrant/e...', 12, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/vagrant/e...', 12, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 14:40:50 Error: Fatal Error (4): syntax error, unexpected 'btn' (T_STRING) in [/home/vagrant/exampleCakePhp/View/Users/login.ctp, line 12]
+2013-12-16 14:40:50 Error: [FatalErrorException] syntax error, unexpected 'btn' (T_STRING)
+Request URL: /
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/vagrant/e...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/vagrant/e...', 12, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/vagrant/e...', 12, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 14:40:51 Error: Fatal Error (4): syntax error, unexpected 'btn' (T_STRING) in [/home/vagrant/exampleCakePhp/View/Users/login.ctp, line 12]
+2013-12-16 14:40:51 Error: [FatalErrorException] syntax error, unexpected 'btn' (T_STRING)
+Request URL: /
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/vagrant/e...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/vagrant/e...', 12, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/vagrant/e...', 12, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 14:40:53 Error: Fatal Error (4): syntax error, unexpected 'btn' (T_STRING) in [/home/vagrant/exampleCakePhp/View/Users/login.ctp, line 12]
+2013-12-16 14:40:53 Error: [FatalErrorException] syntax error, unexpected 'btn' (T_STRING)
+Request URL: /
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/vagrant/e...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/vagrant/e...', 12, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/vagrant/e...', 12, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 14:48:40 Error: Fatal Error (4): syntax error, unexpected ':', expecting ')' in [/home/vagrant/exampleCakePhp/View/Users/login.ctp, line 16]
+2013-12-16 14:48:40 Error: [FatalErrorException] syntax error, unexpected ':', expecting ')'
+Request URL: /users/login/class:btn%20btn-default%20btn-lg%20active/type:submit
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/vagrant/e...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/vagrant/e...', 16, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/vagrant/e...', 16, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 14:48:42 Error: Fatal Error (4): syntax error, unexpected ':', expecting ')' in [/home/vagrant/exampleCakePhp/View/Users/login.ctp, line 16]
+2013-12-16 14:48:42 Error: [FatalErrorException] syntax error, unexpected ':', expecting ')'
+Request URL: /users/login/class:btn%20btn-default%20btn-lg%20active/type:submit
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/vagrant/e...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/vagrant/e...', 16, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/vagrant/e...', 16, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 14:57:03 Error: [MissingViewException] View file "/home/vagrant/exampleCakePhp/View/Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/vagrant/exampleCakePhp/View/Users/index.ctp',
+)
+Request URL: /users
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-16 15:09:05 Error: [MissingControllerException] Controller class LogoutController could not be found.
+Exception Attributes: array (
+  'class' => 'LogoutController',
+  'plugin' => NULL,
+)
+Request URL: /logout
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-16 15:09:23 Error: [MissingActionException] Action UsersController::loout() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'loout',
+)
+Request URL: /users/loout
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-16 15:09:29 Error: [MissingActionException] Action UsersController::logut() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'logut',
+)
+Request URL: /users/logut
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-16 15:14:09 Error: Fatal Error (4): syntax error, unexpected '=', expecting '(' in [/home/vagrant/exampleCakePhp/View/Users/login.ctp, line 12]
+2013-12-16 15:14:09 Error: [FatalErrorException] syntax error, unexpected '=', expecting '('
+Request URL: /
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/vagrant/e...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/vagrant/e...', 12, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/vagrant/e...', 12, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 15:14:33 Error: Fatal Error (4): syntax error, unexpected '=', expecting '(' in [/home/vagrant/exampleCakePhp/View/Users/login.ctp, line 12]
+2013-12-16 15:14:33 Error: [FatalErrorException] syntax error, unexpected '=', expecting '('
+Request URL: /
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/vagrant/e...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/vagrant/e...', 12, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/vagrant/e...', 12, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 15:14:35 Error: Fatal Error (4): syntax error, unexpected '=', expecting '(' in [/home/vagrant/exampleCakePhp/View/Users/login.ctp, line 12]
+2013-12-16 15:14:35 Error: [FatalErrorException] syntax error, unexpected '=', expecting '('
+Request URL: /
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/vagrant/e...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/vagrant/e...', 12, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/vagrant/e...', 12, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 15:14:47 Error: Fatal Error (4): syntax error, unexpected '=', expecting '(' in [/home/vagrant/exampleCakePhp/View/Users/login.ctp, line 12]
+2013-12-16 15:14:47 Error: [FatalErrorException] syntax error, unexpected '=', expecting '('
+Request URL: /
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/vagrant/e...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/vagrant/e...', 12, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/vagrant/e...', 12, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 15:14:48 Error: Fatal Error (4): syntax error, unexpected '=', expecting '(' in [/home/vagrant/exampleCakePhp/View/Users/login.ctp, line 12]
+2013-12-16 15:14:48 Error: [FatalErrorException] syntax error, unexpected '=', expecting '('
+Request URL: /
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/vagrant/e...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/vagrant/e...', 12, Array)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/vagrant/e...', 12, Array)
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-16 15:24:03 Error: [MissingViewException] View file "/home/vagrant/exampleCakePhp/View/Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/vagrant/exampleCakePhp/View/Users/index.ctp',
+)
+Request URL: /users
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-16 15:25:29 Error: [MissingViewException] View file "/home/vagrant/exampleCakePhp/View/Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/vagrant/exampleCakePhp/View/Users/index.ctp',
+)
+Request URL: /users
+Stack Trace:
+#0 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /home/vagrant/exampleCakePhp/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/vagrant/exampleCakePhp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
