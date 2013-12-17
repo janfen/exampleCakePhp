@@ -14,18 +14,11 @@ class MessagesController extends AppController {
 		
     }
 
-    public function view($id = null) {
-        /* if (!$id) {
-            throw new NotFoundException(__('Invalid message'));
-        }
-
-        $message = $this->Thread->findById($id);
-        if (!$thread) {
-            throw new NotFoundException(__('Invalid thread'));
-        }
-        $this->set('thread', $thread); */
+    public function view($thread_id = null) {
+		$this->set('thread_id',$thread_id);
+        	$this->set('listMessages', $this->Message->getAllMessage($thread_id));
 	}
-	public function add($thread_id=null) {
+	/* public function add($thread_id=null) {
         if ($this->request->is('post')) {
             $this->Message->create();
 			$this->request->data['Message']['user_id'] = $this->Auth->user('id');
@@ -36,7 +29,17 @@ class MessagesController extends AppController {
             }
             $this->Session->setFlash(__('Unable to add your message.'));
         }
-    }
+    } */
+	public function add() {
+		$this->Message->create();
+		 $userid = $this->Auth->user("id");
+		
+		$this->request->data["user_id"] = $userid;
+		if (empty($this->request->data["thread_id"])) {
+			$this->request->data["thread_id"] = 1;
+		}  
+		$this->Message->save($this->request->data);
+	 }
 	public function edit($id, $thread_id) {
 		if (!$id) {
 			throw new NotFoundException(__('Invalid message'));
@@ -51,7 +54,7 @@ class MessagesController extends AppController {
 			$this->Message->id = $id;
 			if ($this->Message->save($this->request->data)) {
 				$this->Session->setFlash(__('Your message has been updated.'));
-				return $this->redirect(array('action' => 'index', $thread_id));
+				return $this->redirect(array('action' => 'view', $thread_id));
 			}
 			$this->Session->setFlash(__('Unable to update your message.'));
 		}
@@ -69,7 +72,7 @@ class MessagesController extends AppController {
 		$this->Message->id = $id;
 		if($this->Message->saveField('isDelete', true)){
 			$this->Session->setFlash(__('Your message has been updated.'));
-			return $this->redirect(array('action' => 'index', $thread_id));
+			return $this->redirect(array('action' => 'view', $thread_id));
 		}
 		/* if ($this->Message->save($message)) {
 				$this->Session->setFlash(__('Your message has been updated.'));

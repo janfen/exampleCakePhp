@@ -1,6 +1,7 @@
 
 <p><?php echo 'Xin chao:'.$userName; ?> <?php echo $this->Html->link('Logout', array('controller'=>'users','action' => 'logout')); ?> <h1>List Threads</h1></p>
 <p><?php echo $this->Html->link('Add Thread', array('action' => 'add')); ?></p>
+
 <table class="table table-hover">
     <tr>
         <th>Id</th>
@@ -20,7 +21,7 @@
 			<?php
                 echo $this->Html->link(
                     $thread['Thread']['name'],
-                    array('controller' => 'messages' , 'action' => 'index',$thread['Thread']['id'])
+                    array('controller' => 'messages' , 'action' => 'view',$thread['Thread']['id'])
                 );
             ?>
         </td>

@@ -21,6 +21,7 @@ class UsersController extends AppController {
 	}
 
     public function index() {
+	return $this->redirect(array('controller'=>'threads','action'=>'index'));
         $this->User->recursive = 0;
         $this->set('users', $this->paginate());
     }
